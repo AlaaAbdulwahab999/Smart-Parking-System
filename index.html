@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Parking System</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Smart Parking</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#help">Help</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="main">
+        <div>
+            <h2>Hello, We Are NMAHAM Team<br><span>Graduation Project</span></h2>
+            <h3>We can help you to park your car easily without the need for humans</h3>
+            <a href="#services" class="main-btn">View Home</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <div class="info">
+                    <h3 id="mybtn1">Entry</h3>
+                    <p>
+                        This shows you the free and busy locations and this
+                        helps you to take the shortest route
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <div class="info">
+                    <h3 id="mybtn">Exit</h3>
+                    <p>
+                        This shows you how much time you have spent and
+                        how much money you have to pay to get safe checkout
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="help" id="help">
+        <h2 class="title">Help</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-comments-question"></i>
+                </div>
+                <div class="info">
+                    <p>
+                        The parking is divided into small (slot) sites,
+                        if you see in Entry section that the slot has red color,
+                        it must be free, and if the slot has green color,
+                        it must be busy
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">contacts</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+20122222222</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>smartparking@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Nariman Alsayed</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        var btn = document.getElementById('mybtn');
+        btn.addEventListener('click', function () {
+            document.location.href = 'exit.php';
+        });
+        var btn1 = document.getElementById('mybtn1');
+        btn1.addEventListener('click', function () {
+            document.location.href = 'entry.php';
+        });
+
+    </script>
+
+</body>
+
+</html>
